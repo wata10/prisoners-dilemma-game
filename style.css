@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#game-info, #round-results, #overall-results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    text-align: left;
+}
+#game-info p, #overall-results p {
+    margin: 5px 0;
+}
+
+
+.payoff-table {
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.payoff-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.payoff-table th, .payoff-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.payoff-table th {
+    background-color: #f2f2f2;
+    color: #555;
+    font-weight: bold;
+}
+
+.button-primary, .button-choice {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.button-primary:hover, .button-choice:hover {
+    background-color: #2980b9;
+}
+
+.button-choice {
+    background-color: #27ae60;
+}
+.button-choice:hover {
+    background-color: #219d55;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* ボタン間のスペース */
+}
+
+#round-results p {
+    margin: 8px 0;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.winner {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #27ae60;
+}
+
+.loser {
+    color: #c0392b;
+}
+
+#restart-game {
+    margin-top: 30px;
+}

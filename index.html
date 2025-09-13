@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繰り返し囚人のジレンマゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>繰り返し囚人のジレンマゲーム</h1>
+        <div id="game-info">
+            <p>各ラウンドで「黙秘」または「自白」を選択してください。</p>
+        </div>
+
+        <div class="payoff-table">
+            <h2>利得表</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>CPU：黙秘</th>
+                        <th>CPU：自白</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>あなた：黙秘</th>
+                        <td>あなた:2点, CPU:2点</td>
+                        <td>あなた:0点, CPU:3点</td>
+                    </tr>
+                    <tr>
+                        <th>あなた：自白</th>
+                        <td>あなた:3点, CPU:0点</td>
+                        <td>あなた:1点, CPU:1点</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="game-area">
+            <button id="start-game" class="button-primary">ゲーム開始</button>
+
+            <div id="round-display" style="display: none;">
+                <div class="buttons">
+                    <button id="cooperate-btn" class="button-choice">黙秘</button>
+                    <button id="defect-btn" class="button-choice">自白</button>
+                </div>
+                <div id="round-results"></div>
+            </div>
+        </div>
+
+        <div id="overall-results" style="display: none;">
+            <h2>最終結果</h2>
+            <p>CPUが使用した戦略: <span id="cpu-strategy"></span></p>
+            <p>あなたの合計得点: <span id="player-total-score"></span>点</p>
+            <p>CPUの合計得点: <span id="cpu-total-score"></span>点</p>
+            <p>あなたの平均得点: <span id="player-avg-score"></span>点/回</p>
+            <p>CPUの平均得点: <span id="cpu-avg-score"></span>点/回</p>
+            <p class="winner" id="winner-message"></p>
+            <button id="restart-game" class="button-primary">もう一度プレイ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
